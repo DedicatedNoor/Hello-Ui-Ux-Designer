@@ -1,0 +1,484 @@
+/* body */
+body {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1440px;
+    margin: auto;
+}
+
+/* header */
+header {
+    background-color: rgba(247, 205, 158, 0.1);
+    padding-bottom: 50px;
+}
+
+/* navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 150px;
+}
+
+/* banner */
+#banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#banner-img {
+    width: 80%;
+    margin-top: 50px;
+}
+
+/* main */
+
+/* architects */
+#architects {
+    display: flex;
+    align-items: center;
+    padding: 80px 150px;
+}
+
+#architects-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+#architects-texts {
+    margin-left: 50px;
+}
+
+/* features */
+#features {
+    display: flex;
+    padding: 20px 100px;
+}
+
+#features-heading {
+    border-left: 5px solid #FF900E;
+    padding-left: 10px;
+}
+
+#features-texts {
+    margin-right: 100px;
+    width: 50%;
+}
+
+#features-image {
+    width: 50%;
+    margin-top: 80px;
+}
+
+#features-image img {
+    width: 100%;
+}
+
+.features-div {
+    padding: 20px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#experience {
+    background-color: #FF900E;
+    border-radius: 5px;
+    padding: 35px;
+    width: 342px;
+    position: relative;
+    bottom: 130px;
+    right: 50px;
+}
+
+/* facts */
+#facts-section {
+    margin-bottom: 100px;
+}
+
+#fact-text {
+    margin: 100px;
+}
+
+#facts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    padding: 0 50px;
+}
+
+.fact-div {
+    padding: 40px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    width: 200px;
+}
+
+.fact-div:hover {
+    box-shadow: rgba(255, 170, 0, 0.15) 0px 50px 100px 0px;
+}
+
+/* sponsors */
+#sponsors-text {
+    margin-bottom: 100px;
+}
+
+#sponsors-images {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+/* entrepreneur */
+#entrepreneur-div {
+    background-color: rgba(247, 205, 158, 0.1);
+    padding: 50px;
+    border-radius: 8px;
+    margin: 100px;
+    display: flex;
+    align-items: center;
+}
+
+#entrepreneur-div img {
+    width: 25%;
+    border-radius: 8px;
+}
+
+#entrepreneur-texts {
+    margin-left: 50px;
+}
+
+#entrepreneur-anchor {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+/* footer */
+footer {
+    margin: 100px;
+}
+
+footer p {
+    text-align: center;
+    padding: 30px 100px;
+    background-color: #FF900E;
+    color: white;
+}
+
+
+/* common styles */
+
+a {
+    text-decoration: none;
+    color: black;
+    margin-right: 25px;
+}
+
+button {
+    color: white;
+    background-color: #FF900E;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 50px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 10px;
+}
+
+.white-text-big {
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 10px;
+    color: white;
+}
+
+.white-text {
+    color: white;
+}
+
+.center-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/***** media queries *****/
+
+/* for mobile phone */
+@media screen and (max-width: 480px) {
+
+    h1 {
+        font-size: 30px;
+        line-height: 25px;
+    }
+
+    h2 {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .white-text-big {
+        font-size: 25px;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    #branches {
+        margin: 0;
+    }
+
+    #banner-img {
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    #banner-texts {
+        padding: 20px;
+    }
+
+    #architects {
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+
+    #architects-image {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    #architects-texts {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    #features {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+
+    #features-texts {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    #features-image {
+        width: 100%;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .features-div {
+        padding: 10px;
+    }
+
+    #experience {
+        padding: 15px;
+        width: 150px;
+        bottom: 0px;
+        right: 0px;
+        margin: 20px 0;
+    }
+
+    #facts-section {
+        margin-bottom: 30px;
+    }
+
+    #fact-text {
+        margin: 20px;
+    }
+
+    #facts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #sponsors-text {
+        margin-bottom: 30px;
+    }
+
+    #sponsors-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    #sponsors-images img {
+        width: 50%;
+        margin-bottom: 50px;
+    }
+
+    #entrepreneur-div {
+        padding: 20px;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #entrepreneur-div img {
+        width: 80%;
+    }
+
+    #entrepreneur-texts {
+        margin-left: 0;
+    }
+
+    footer {
+        margin: 20px;
+    }
+
+    footer p {
+        padding: 30px;
+    }
+}
+
+/* for tablet */
+@media only screen and (max-width: 1279px) and (min-width: 481px) {
+
+    .white-text-big {
+        font-size: 25px;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    #branches {
+        margin: 0;
+    }
+
+    #banner-img {
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    #banner-texts {
+        padding: 20px;
+    }
+
+    #architects {
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+
+    #architects-image {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    #architects-texts {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    #features {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+
+    #features-texts {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    #features-image {
+        width: 100%;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .features-div {
+        padding: 10px;
+    }
+
+    #experience {
+        padding: 15px;
+        width: 150px;
+        bottom: 0px;
+        right: 0px;
+        margin: 20px 0;
+    }
+
+    #facts-section {
+        margin-bottom: 30px;
+    }
+
+    #fact-text {
+        margin: 20px;
+    }
+
+    #facts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+
+    #sponsors-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    #sponsors-images img {
+        width: 50%;
+        margin-bottom: 50px;
+    }
+
+    #entrepreneur-div {
+        padding: 20px;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #entrepreneur-div img {
+        width: 80%;
+    }
+
+    #entrepreneur-texts {
+        margin-left: 0;
+    }
+
+    footer {
+        margin: 20px;
+    }
+
+    footer p {
+        padding: 30px;
+    }
+}
